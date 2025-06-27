@@ -1,4 +1,4 @@
-package entidades;
+package src.entidades;
 
 public class ServidorPublico {
         private int matricula;
@@ -27,6 +27,16 @@ public class ServidorPublico {
 
         public String getLotacao() {
                 return lotacao;
+        }
+
+        public ServidorPublico(int matricula, String nome, String orgao, double salario, String cargo, String lotacao, String email) {
+                this.matricula = matricula;
+                this.nome = nome;
+                this.orgao = orgao;
+                this.salario = salario;
+                this.cargo = cargo;
+                this.lotacao = lotacao;
+                this.email = email;
         }
 
         public void setLotacao(String lotacao) {
@@ -138,5 +148,7 @@ public class ServidorPublico {
                 double salario = this.salario + horasExtras;
                 return salario;
         }
+
 }
+
 
